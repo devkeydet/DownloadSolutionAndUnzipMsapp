@@ -12,7 +12,7 @@ Console.WriteLine("Please enter your solution name: ");
 string solutionUniqueName = Console.ReadLine();
 
 // Dataverse connection string
-string connectionString = $"AuthType=OAuth;Url={url};RedirectUri=http://localhost;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;LoginPrompt=Once";  // replace AppId with your own
+string connectionString = $"AuthType=OAuth;Url={url};RedirectUri=http://localhost;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;LoginPrompt=Once";  // Microsoft Entra ID app registration shared by all Power App samples. Replace AppId with your own
 
 // Connect to Dataverse
 using (ServiceClient serviceClient = new ServiceClient(connectionString))
